@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+  }
+  .topContainer{
+    width:100%;
+      height:60px;
+      background-color:#011958;
+  }
+  .lrm-logo{
+    float: left;
+  }
+  .header{
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: #fb7e43;
+    font-family: sans-serif;
+    float: left;
+  }
+  
+  .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .bottomContainer {
+    margin:10px;
+    border-radius: 15px;
+    background: #f1f1f0;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  
+  .submit{
+    background-color: #fb7e43;
+    color: white;
+    font-size: 30px;
+    float: right;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    right: 200px;
+    margin-right: 100px;
+  }
+  .arrow-down {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    padding: 12px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  

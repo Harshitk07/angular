@@ -1,0 +1,30 @@
+
+<div class="topContainer">
+  <img class = "lrm-logo"  src="images/13.jpeg " alt="logo" >
+  <h2 class="header" >IMPORT PAGE</h2>
+</div>
+<div class="bottomContainer">
+  <div style="float:left; margin-left:100px; margin-top:50px;">
+    <h3>Action</h3>
+    <button class="dropbtn">Update<i class="arrow-down"></i></button>
+  </div>
+  <div style="float:left; margin-left:200px ;margin-top:50px;">
+    <h3>Import Platform</h3>
+    <button class="dropbtn">Timesheet<i class="arrow-down"></i></button>
+  </div>
+  <div style="float:left; margin-left:200px ;margin-top:50px;">
+    <h3>Upload CSV file</h3>
+    <button class="btn" (click) = toggleDisplay()> Upload a file</button>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  <div *ngIf = !isShow style="margin-left :100px;" >
+    <h3>Add Attributes</h3>
+    <button class="dropbtn" >Add Attributes<i class="arrow-down"></i></button>
+  </div>
+  <div *ngIf = !isShow1 ><br><br><br><br></div>
+  
+  <br><br><br><br><br><br><br><br><br>
+  <button class="submit">Submit</button>
+  <br><br><br><br><br><br>
+
+</div>
