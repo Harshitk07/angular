@@ -10,8 +10,7 @@ body {
     float: left;
   }
   .header{
-    padding-left: 5px;
-    padding-bottom: 10px;
+    padding:10px 10px 5px;
     color: #fb7e43;
     font-family: sans-serif;
     float: left;
@@ -71,6 +70,15 @@ body {
     border-radius: 15px;
     font-size: 20px;
   }
+  .btn1 {
+    position:fixed; 
+    color: black;
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  
   
   .upload-btn-wrapper input[type=file] {
     font-size: 100px;

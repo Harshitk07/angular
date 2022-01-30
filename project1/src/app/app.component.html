@@ -1,6 +1,5 @@
-
 <div class="topContainer">
-  <img class = "lrm-logo"  src="images/13.jpeg " alt="logo" >
+  <img class = "lrm-logo"  src="assets/1.jpeg " alt="logo" >
   <h2 class="header" >IMPORT PAGE</h2>
 </div>
 <div class="bottomContainer">
@@ -14,17 +13,31 @@
   </div>
   <div style="float:left; margin-left:200px ;margin-top:50px;">
     <h3>Upload CSV file</h3>
-    <button class="btn" (click) = toggleDisplay()> Upload a file</button>
+    <button class="btn" (click) = toggleDisplay()>Upload a file</button>
   </div>
   <br><br><br><br><br><br><br><br>
   <div *ngIf = !isShow style="margin-left :100px;" >
-    <h3>Add Attributes</h3>
-    <button class="dropbtn" >Add Attributes<i class="arrow-down"></i></button>
+    <h3>Attributes</h3>
+    <div class="btn1">
+      <ng-multiselect-dropdown 
+        [placeholder]="'Choose Attributes'"
+        [settings]="dropdownSettings"
+        [data]="dropdownList"
+        [(ngModel)]="selectedItems"
+        (onSelect)="onItemSelect($event)"
+        (onSelectAll)="onSelectAll($event)">
+      </ng-multiselect-dropdown>
+    </div>
+    <br>
   </div>
-  <div *ngIf = !isShow1 ><br><br><br><br></div>
+  <div *ngIf = !isShow1 ><br><br><br></div>
   
   <br><br><br><br><br><br><br><br><br>
   <button class="submit">Submit</button>
   <br><br><br><br><br><br>
 
+</div>
+<div style="text-align: center;">
+  <h3 style="color: gray;">Powered by</h3>
+  <img src="assets/2.jpeg" alt="logo">
 </div>
