@@ -1,90 +1,111 @@
 body {
-    text-align: center;
-  }
-  .topContainer{
-    width:100%;
       height:60px;
-      background-color:#011958;
-  }
-  .lrm-logo{
-    float: left;
-  }
-  .header{
-    padding:10px 10px 5px;
-    color: #fb7e43;
-    font-family: sans-serif;
-    float: left;
-  }
-  
-  .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 12px 40px;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-    font-size: 20px;
-  }
-  .bottomContainer {
-    margin:10px;
-    border-radius: 15px;
-    background: #f1f1f0;
-    width: 100%;
-    display: inline-block;
-  }
-  
-  
-  .submit{
-    background-color: #fb7e43;
-    color: white;
-    font-size: 30px;
-    float: right;
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-    border: none;
-    right: 200px;
-    margin-right: 100px;
-  }
-  .arrow-down {
-    width: 0;
-    height: 0;
-    float: right;
-    margin-left: 100px;
-    margin-top: 10px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-  }
-  .upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-  }
-  
-  .btn {
-    border: 2px solid white;
-    color: black;
-    background-color: white;
-    padding: 12px 40px;
-    border-radius: 15px;
-    font-size: 20px;
-  }
-  .btn1 {
-    position:fixed; 
-    color: black;
-    background-color: white;
-    padding: 15px 40px;
-    border-radius: 15px;
-    font-size: 20px;
-  }
-  
-  
-  .upload-btn-wrapper input[type=file] {
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-  }
-  
+  text-align: center;
+}
+.topContainer{
+  width:100%;
+  height: 90px;
+  background-color:#011958;
+}
+.lrm-logo{
+  float: left;
+  margin-top: 11px;
+  margin-left: 20px;
+}
+.line {
+  float: left;
+  height:65px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.header{
+  margin-top: 25px;
+  margin-left: 15px;
+  color: #fb7e43;
+  font-family: sans-serif;
+  float: left;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.bottomContainer {
+  margin-top: 36px;
+  margin-left: 41px;
+  width: 95%;
+  height: 593px;
+  background: #F0F0F0 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  opacity: 1;
+}
+.content {
+  float:left;
+  margin-left:100px ;
+  margin-top:50px;
+}
+.content1 {
+  float:left;
+  margin-left:200px ;
+  margin-top:50px;
+}
+
+
+.submit{
+  margin-top: 300px;
+  margin-left: 1100px;
+  width: 220px;
+  height: 55px;
+  background: #F9803F 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 25px;
+  opacity: 1;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-left: 100px;
+  margin-top: 10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.btn {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.btn1 {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.attribute {
+padding-top: 200px;
+padding-left: 100px;
+width: 400px;
+}
+

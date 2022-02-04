@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var $:any;
 
 @Component({
   selector: 'app-root',
@@ -34,6 +36,11 @@ this.dropdownSettings= {
   selectAllText: 'Select All',
   unSelectAllText: 'UnSelect All'
 };
+$('#file-upload').change(() => {
+  var i = $(this).prev('label').clone();
+  var file = $('#file-upload').files[0].name;
+  $(this).prev('label').text(file);
+});
 
 }
 
@@ -47,5 +54,9 @@ onItemDeSelect(item: any) {
   console.log(item);
 }
 
+
+ 
+
 }
+
   
