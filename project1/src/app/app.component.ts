@@ -9,16 +9,19 @@ declare var $:any;
 })
 export class AppComponent {
   title = 'project1';
-  isShow = true;
-  isShow1 = false;
  
-  toggleDisplay() {
-    this.isShow = !this.isShow;
-    this.isShow1 = !this.isShow1;
-  }
   dropdownList :{ item_id: number; item_text: string; }[] = [];
   selectedItems: { item_id: number; item_text: string; }[] = [];
   dropdownSettings = {};
+  isFileChosen:boolean = false;
+  fileName: string = '';
+  preUpload(event: any){
+    let file = event.target.files[0];
+    if (event.target.files.length > 0){
+    this.isFileChosen = true;
+    }        
+    this.fileName = file.name;
+  }
 ngOnInit(){
  
  this.dropdownList = [
@@ -36,11 +39,7 @@ this.dropdownSettings= {
   selectAllText: 'Select All',
   unSelectAllText: 'UnSelect All'
 };
-$('#file-upload').change(() => {
-  var i = $(this).prev('label').clone();
-  var file = $('#file-upload').files[0].name;
-  $(this).prev('label').text(file);
-});
+
 
 }
 
